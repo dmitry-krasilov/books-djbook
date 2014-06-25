@@ -15,3 +15,17 @@ def display_meta(request):
     	},
     	RequestContext(request)
     )
+
+def display_request_info(request):
+	METAs = request.META.items()
+	METAs.sort()
+	POSTs = request.POST.values()
+	GETs = request.GET.keys()
+	return render_to_response('full_request_info.html',
+		{
+		'METAs': METAs,
+		'POSTs': POSTs,
+		'GETs': GETs
+		},
+		RequestContext(request)
+)
