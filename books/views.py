@@ -43,4 +43,5 @@ def search(request):
     	return render_to_response('search_result.html',
     		{'books': books, 'query': q})
     else:
-	    return HttpResponse('Pls submit a search term')
+	    return render_to_response('search_form.html',
+	    	{'error': True})
