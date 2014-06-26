@@ -2,23 +2,23 @@
 
 <html>
     <body>
-    	<table>
-    		{%	for key, value in METAs %}
-    			<tr><td>{{ key }}</td><td>{{ value }}</td></tr>
-		    {% endfor %}
-		</table>
-		<br><br><br>
-    	<table>
-    		{%	for key in POSTs %}
-    			<tr><td>{{ key }}</td><td></td></tr>
-		    {% endfor %}
-		</table>
-		<br><br><br>
-    	<table>
-    		{%	for key in GETs %}
-    			<tr><td>{{ key }}</td><td></td></tr>
-		    {% endfor %}
-		</table>
+        <table>
+            {%    for key, value in METAs %}
+                <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+            {% endfor %}
+        </table>
+        <br><br><br>
+        <table>
+            {%    for key in POSTs %}
+                <tr><td>{{ key }}</td><td></td></tr>
+            {% endfor %}
+        </table>
+        <br><br><br>
+        <table>
+            {%    for key in GETs %}
+                <tr><td>{{ key }}</td><td></td></tr>
+            {% endfor %}
+        </table>
     
     </body>
 </html>
